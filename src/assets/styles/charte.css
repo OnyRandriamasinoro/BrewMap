@@ -1,0 +1,42 @@
+:root {
+  --couleur-primaire: #f6d400; /* Vert vif */
+  --couleur-secondaire: #eac111; /* Gris anthracite */
+  --fond: #000202; /* Noir profond */
+  --texte-clair: #fdfdfd; /* Blanc cassé */
+  --texte-fonce: #000202; /* Noir pour textes sur fond clair */
+  --accent: #e4783d; /* Rose fluo pour accents */
+  
+  --font-main: 'Nohemi', sans-serif;
+  --font-secondary: 'Caviar', serif;
+  --taille-texte-base: 22px;
+  --taille-titre: 2.5rem;
+  --taille-sous-titre: 1.8rem;
+  --espacement: 1.5rem;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('../assets/fonts/nohemi/Nohemi-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caviar';
+  src: url('../fonts/Caviar/CaviarDreams_Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Classes utilitaires */
+.text-accent {
+  color: var(--accent);
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-main);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}

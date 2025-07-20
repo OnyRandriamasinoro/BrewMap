@@ -1,0 +1,18 @@
+/src
+│
+├── composants/
+│   ├── BarreDeRecherche.jsx     // Champ de recherche
+│   ├── FicheBrasserie.jsx       // Détail d'une brasserie (popup ou fiche)
+│   └── Bouton.jsx               // Composant bouton stylisé (réutilisable)
+│
+├── pages/
+│   ├── PageAccueil.jsx          // Composant principal avec toute la logique
+│   ├── ListeBrasseries.jsx      // Vue liste (tableau ou cartes)
+│   └── CarteBrasseries.jsx      // Vue carte avec react-leaflet
+│
+├──asssets/ styles/
+│   ├── charte.css               // Variables CSS, couleurs, polices
+│   └── global.css               // Reset + styles globaux (body, titres, etc.)
+│
+├── App.jsx
+└── main.jsx

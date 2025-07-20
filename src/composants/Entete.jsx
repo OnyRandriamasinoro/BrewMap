@@ -11,15 +11,15 @@ const Entete = ({ valeur, onChange }) => {
       padding: '1rem 2rem',
       backgroundColor: 'var(--fond)',
       borderBottom: '1px solid var(--couleur-secondaire)',
-      position: 'relative' // Ajouté pour un meilleur contrôle
+      position: 'relative' 
     }}>
-      {/* Logo - remplace par ton propre chemin */}
+      
       <div style={{ 
         marginRight: '2rem',
-        flexShrink: 0 // Empêche le rétrécissement du logo
+        flexShrink: 0 
       }}>
         <img 
-          src="/chemin/vers/logo.png" 
+          src="../assets/image/1x/Plan de travail 1.png" 
           alt="Logo" 
           style={{ height: '50px' }} 
         />
@@ -37,9 +37,9 @@ const Entete = ({ valeur, onChange }) => {
         />
       </div>
 
-      {/* Espace vide pour équilibrer (optionnel) */}
+      
       <div style={{ 
-        width: 'calc(2rem + 50px)', // Correspond à marginRight du logo + largeur logo
+        width: 'calc(2rem + 50px)', 
         flexShrink: 0 
       }} />
     </header>

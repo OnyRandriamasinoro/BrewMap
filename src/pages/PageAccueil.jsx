@@ -9,7 +9,7 @@ import PiedDePage from '../composants/PiedDePage';
 const PageAccueil = () => {
   const [brasseries, setBrasseries] = useState([]);
   const [recherche, setRecherche] = useState('');
-  const [mode, setMode] = useState('carte'); // 'carte' ou 'liste'
+  const [mode, setMode] = useState('liste'); 
 
   useEffect(() => {
     axios
@@ -29,7 +29,6 @@ const PageAccueil = () => {
       minHeight: '100vh',
       backgroundColor: 'var(--fond)'
     }}>
-      {/* Contenu principal */}
       <main style={{
         flex: '1',
         maxWidth: '1200px',
@@ -72,7 +71,6 @@ const PageAccueil = () => {
         )}
       </main>
 
-      {/* Pied de page */}
       <PiedDePage />
     </div>
   );

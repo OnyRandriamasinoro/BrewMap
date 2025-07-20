@@ -19,13 +19,12 @@ const ListeBrasseries = ({ brasseries, onSelection }) => {
     );
   }
 
-  // Calcul des brasseries à afficher
+  
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentBrasseries = brasseries.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(brasseries.length / itemsPerPage);
 
-  // Génération des numéros de page à afficher
   const getPageNumbers = () => {
     const pages = [];
     const maxVisiblePages = 5;
@@ -184,7 +183,6 @@ const ListeBrasseries = ({ brasseries, onSelection }) => {
         </div>
       )}
 
-      {/* Affichage des résultats */}
       <div style={{
         textAlign: 'center',
         fontSize: '0.85rem',

@@ -13,8 +13,8 @@ const FicheBrasserie = ({ brasserie }) => {
         flexDirection: 'column',
         gap: '0.75rem',
         transition: 'all 0.3s ease',
-        height: '100%', // Assure que toutes les cartes ont la même hauteur
-        minHeight: '200px', // Hauteur minimale fixe
+        height: '100%', 
+        minHeight: '200px', 
         boxSizing: 'border-box',
         ':hover': {
           transform: 'translateY(-2px)',
@@ -22,28 +22,25 @@ const FicheBrasserie = ({ brasserie }) => {
         }
       }}
     >
-      {/* Nom de la brasserie avec hauteur fixe */}
       <h3 style={{
         margin: '0',
         fontSize: '1.25rem',
         fontWeight: 'bold',
         fontFamily: 'var(--font-main)',
         color: 'var(--couleur-primaire)',
-        minHeight: '3rem', // Hauteur fixe pour le titre
+        minHeight: '3rem',
         display: 'flex',
         alignItems: 'center'
       }}>
         {brasserie.name}
       </h3>
 
-      {/* Contenu principal avec flex-grow */}
       <div style={{
         flexGrow: 1,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between'
       }}>
-        {/* Adresse */}
         <div style={{
           display: 'flex',
           flexDirection: 'column',
@@ -75,15 +72,14 @@ const FicheBrasserie = ({ brasserie }) => {
           )}
         </div>
 
-        {/* Lien vers le site web - positionné en bas */}
         {brasserie.website_url && (
           <a
             href={brasserie.website_url}
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              alignSelf: 'flex-start', // Alignement à gauche
-              marginTop: 'auto', // Pousse le lien vers le bas
+              alignSelf: 'flex-start',
+              marginTop: 'auto', 
               color: 'var(--accent)',
               fontSize: '0.9rem',
               fontFamily: 'var(--font-main)',

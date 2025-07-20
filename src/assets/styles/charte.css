@@ -1,10 +1,10 @@
 :root {
-  --couleur-primaire: #f6d400; /* Vert vif */
-  --couleur-secondaire: #eac111; /* Gris anthracite */
-  --fond: #000202; /* Noir profond */
-  --texte-clair: #fdfdfd; /* Blanc cassé */
-  --texte-fonce: #000202; /* Noir pour textes sur fond clair */
-  --accent: #e4783d; /* Rose fluo pour accents */
+  --couleur-primaire: #Fdb400; 
+  --couleur-secondaire: #eac111; 
+  --fond: #393939;
+  --texte-clair: #e7e7e7; 
+  --couleur-fonce: #000202; 
+  --accent: #e4783d;
   
   --font-main: 'Nohemi', sans-serif;
   --font-secondary: 'Caviar', serif;

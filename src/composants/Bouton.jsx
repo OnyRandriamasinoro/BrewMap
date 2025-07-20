@@ -6,7 +6,7 @@ const Bouton = ({ mode, onToggle }) => (
       onClick={onToggle}
       style={{
         position: 'relative',
-        backgroundColor: 'var( --couleur-secondaire)',
+        backgroundColor: 'var( --couleur-prima)',
         color: 'var(--texte-clair)',
         border: '1px solid rgba(246, 212, 0, 0.3)', 
         borderRadius: '50px', 

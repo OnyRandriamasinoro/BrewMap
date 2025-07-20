@@ -50,24 +50,48 @@ const FicheBrasserie = ({ brasserie }) => {
           {brasserie.address_1 && (
             <p style={{
               margin: '0',
-              fontSize: '0.95rem',
+              fontSize: '0.9rem',
               color: 'var(--texte-clair)',
               fontFamily: 'var(--font-secondary)',
               lineHeight: '1.4'
             }}>
-              {brasserie.address_1}
+              <strong style={{color: 'var(--couleur-secondaire)', fontSize: '1.2rem'} }>Nom:</strong> {brasserie.address_1}
             </p>
           )}
 
-          {brasserie.city && (
+          {(brasserie.city || brasserie.state) && (
             <p style={{
               margin: '0',
-              fontSize: '0.95rem',
+              fontSize: '0.9rem',
               color: 'var(--texte-clair)',
               fontFamily: 'var(--font-secondary)',
               lineHeight: '1.4'
             }}>
-              {brasserie.city}{brasserie.state && `, ${brasserie.state}`}
+              <strong style={{color: 'var(--couleur-secondaire)', fontSize: '1.2rem'} }>Ville:</strong> {brasserie.city}{brasserie.state && `, ${brasserie.state}`}
+            </p>
+          )}
+
+          {brasserie.longitude && (
+            <p style={{
+              margin: '0',
+              fontSize: '0.9rem',
+              color: 'var(--texte-clair)',
+              fontFamily: 'var(--font-secondary)',
+              lineHeight: '1.4'
+            }}>
+              <strong style={{color: 'var(--couleur-secondaire)', fontSize: '1.2rem'} }>Longitude:</strong> {brasserie.longitude}
+            </p>
+          )}
+
+          {brasserie.latitude && (
+            <p style={{
+              margin: '0',
+              fontSize: '0.9rem',
+              color: 'var(--texte-clair)',
+              fontFamily: 'var(--font-secondary)',
+              lineHeight: '1.4'
+            }}>
+              <strong style={{color: 'var(--couleur-secondaire)', fontSize: '1.2rem'} }>Latitude:</strong> {brasserie.latitude}
             </p>
           )}
         </div>
@@ -93,7 +117,7 @@ const FicheBrasserie = ({ brasserie }) => {
               }
             }}
           >
-            Visiter le site web
+            Aller au site web
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
             </svg>

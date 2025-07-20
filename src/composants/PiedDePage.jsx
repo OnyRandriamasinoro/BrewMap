@@ -4,7 +4,7 @@ import '../assets/styles/charte.css';
 const PiedDePage = () => {
   return (
     <footer style={{
-      backgroundColor: 'var(--couleur-fond)',
+      backgroundColor: 'var(--couleur-fonce)',
       color: 'var(--texte-clair)',
       padding: '2rem 1rem',
       marginTop: '2rem',
@@ -19,7 +19,6 @@ const PiedDePage = () => {
         flexDirection: 'column',
         gap: '1rem'
       }}>
-        {/* Section liens utiles */}
         <div style={{
           display: 'flex',
           justifyContent: 'center',
